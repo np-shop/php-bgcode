@@ -6,6 +6,7 @@ namespace NickNickDevelopment\BgCode\Tests\Unit;
 
 use NickNickDevelopment\BgCode\BgCode;
 use NickNickDevelopment\BgCode\Block\FileMetadataBlock;
+use NickNickDevelopment\BgCode\Thumbnail\ThumbnailFormat;
 use PHPUnit\Framework\TestCase;
 
 final class BgCodeMetadataTest extends TestCase
@@ -37,5 +38,16 @@ final class BgCodeMetadataTest extends TestCase
         self::assertSame('GCDE', $header->magicString());
         self::assertSame(1, $header->version);
         self::assertSame(1, $header->checksumType);
+    }
+
+    public function testItReadsThumbnailsFromFixture(): void
+    {
+        $bgcode = BgCode::open(__DIR__ . '/../Fixtures/test.bgcode');
+        $thumbnails = $bgcode->thumbnails();
+
+        self::assertNotEmpty($thumbnails);
+        self::assertSame(ThumbnailFormat::QOI, $thumbnails[0]->format());
+        self::assertSame(16, $thumbnails[0]->width());
+        self::assertSame(16, $thumbnails[0]->height());
     }
 }
