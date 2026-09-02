@@ -1,0 +1,30 @@
+{
+  "name": "nicknick-development/php-bgcode",
+  "description": "Pure PHP reader for Prusa BGCode files.",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "php": ">=8.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "NickNickDevelopment\\BgCode\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "NickNickDevelopment\\BgCode\\Tests\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^3.0",
+    "phpunit/phpunit": "^10.5 || ^11.0"
+  },
+  "scripts": {
+    "test": "phpunit",
+    "lint": "find src tests -name '*.php' -print0 | xargs -0 -n1 php -l",
+    "lint:fix": "php-cs-fixer fix"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
