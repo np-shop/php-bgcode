@@ -93,6 +93,67 @@ foreach ($bgcode->thumbnails() as $thumbnail) {
 
 The repository includes a fixture at `tests/Fixtures/test.bgcode` used by the unit tests for metadata, G-code, header, and thumbnail reading.
 
+## Block types
+
+`BgCode::blocks()` returns typed block objects.
+
+### Shared methods
+
+| Method | Description | Returns |
+| --- | --- | --- |
+| `header()` | Returns the parsed block header. | `BlockHeader` |
+| `parameters()` | Returns the raw block parameters. | `string` |
+| `data()` | Returns the raw block payload. | `string` |
+| `checksum()` | Returns the block checksum when present. | `?int` |
+| `type()` | Returns the block type enum. | `BlockType` |
+
+### `BlockType::FileMetadata`
+
+| Method | Description | Returns |
+| --- | --- | --- |
+| `encoding()` | Returns the metadata encoding. | `MetadataEncodingType` |
+| `text()` | Returns the raw metadata text. | `string` |
+| `values()` | Returns decoded metadata key/value pairs. | `array` |
+
+### `BlockType::GCode`
+
+| Method | Description | Returns |
+| --- | --- | --- |
+| `encoding()` | Returns the G-code encoding. | `GCodeEncodingType` |
+| `decoded(GCodeDecoder $decoder)` | Returns decoded G-code text using the provided decoder. | `string` |
+
+### `BlockType::SlicerMetadata`
+
+| Method | Description | Returns |
+| --- | --- | --- |
+| `encoding()` | Returns the metadata encoding. | `MetadataEncodingType` |
+| `text()` | Returns the raw metadata text. | `string` |
+| `values()` | Returns decoded metadata key/value pairs. | `array` |
+
+### `BlockType::PrinterMetadata`
+
+| Method | Description | Returns |
+| --- | --- | --- |
+| `encoding()` | Returns the metadata encoding. | `MetadataEncodingType` |
+| `text()` | Returns the raw metadata text. | `string` |
+| `values()` | Returns decoded metadata key/value pairs. | `array` |
+
+### `BlockType::PrintMetadata`
+
+| Method | Description | Returns |
+| --- | --- | --- |
+| `encoding()` | Returns the metadata encoding. | `MetadataEncodingType` |
+| `text()` | Returns the raw metadata text. | `string` |
+| `values()` | Returns decoded metadata key/value pairs. | `array` |
+
+### `BlockType::Thumbnail`
+
+| Method | Description | Returns |
+| --- | --- | --- |
+| `format()` | Returns the thumbnail image format. | `ThumbnailFormat` |
+| `width()` | Returns the thumbnail width in pixels. | `int` |
+| `height()` | Returns the thumbnail height in pixels. | `int` |
+
 ## Status
 
 Early architecture / development stage.
