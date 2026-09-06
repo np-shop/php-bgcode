@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace NickNickDevelopment\BgCode\Block;
+namespace NPShop\BgCode\Block;
 
-use NickNickDevelopment\BgCode\Support\UInt;
-use NickNickDevelopment\BgCode\Thumbnail\ThumbnailFormat;
+use NPShop\BgCode\Support\UInt;
+use NPShop\BgCode\Thumbnail\ThumbnailFormat;
 
 final class ThumbnailBlock extends Block
 {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace NickNickDevelopment\BgCode\Compression;
+namespace NPShop\BgCode\Compression;
 
 final class DeflateDecompressor implements Decompressor
 {

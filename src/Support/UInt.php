@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace NickNickDevelopment\BgCode\Support;
+namespace NPShop\BgCode\Support;
 
 final class UInt
 {

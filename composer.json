@@ -1,5 +1,5 @@
 {
-  "name": "nicknick-development/php-bgcode",
+  "name": "np-shop/php-bgcode",
   "description": "Pure PHP reader for Prusa BGCode files.",
   "type": "library",
   "license": "MIT",
@@ -8,12 +8,12 @@
   },
   "autoload": {
     "psr-4": {
-      "NickNickDevelopment\\BgCode\\": "src/"
+      "NPShop\\BgCode\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "NickNickDevelopment\\BgCode\\Tests\\": "tests/"
+      "NPShop\\BgCode\\Tests\\": "tests/"
     }
   },
   "require-dev": {

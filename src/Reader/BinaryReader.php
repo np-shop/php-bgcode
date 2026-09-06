@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace NickNickDevelopment\BgCode\Reader;
+namespace NPShop\BgCode\Reader;
 
 final class BinaryReader
 {

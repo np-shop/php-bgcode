@@ -2,6 +2,6 @@
 
 declare(strict_types=1);
 
-namespace NickNickDevelopment\BgCode\Exception;
+namespace NPShop\BgCode\Exception;
 
 class BgCodeException extends \RuntimeException {}

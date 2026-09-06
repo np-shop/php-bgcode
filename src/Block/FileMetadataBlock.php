@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace NickNickDevelopment\BgCode\Block;
+namespace NPShop\BgCode\Block;
 
 final class FileMetadataBlock extends MetadataBlock
 {

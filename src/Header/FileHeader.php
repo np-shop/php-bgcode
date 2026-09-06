@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace NickNickDevelopment\BgCode\Header;
+namespace NPShop\BgCode\Header;
 
 final readonly class FileHeader
 {

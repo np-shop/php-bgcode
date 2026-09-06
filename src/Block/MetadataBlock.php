@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace NickNickDevelopment\BgCode\Block;
+namespace NPShop\BgCode\Block;
 
-use NickNickDevelopment\BgCode\Header\BlockHeader;
-use NickNickDevelopment\BgCode\Metadata\MetadataEncodingType;
-use NickNickDevelopment\BgCode\Support\UInt;
+use NPShop\BgCode\Header\BlockHeader;
+use NPShop\BgCode\Metadata\MetadataEncodingType;
+use NPShop\BgCode\Support\UInt;
 
 abstract class MetadataBlock extends Block
 {

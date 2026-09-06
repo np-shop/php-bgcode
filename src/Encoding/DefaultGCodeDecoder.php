@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace NickNickDevelopment\BgCode\Encoding;
+namespace NPShop\BgCode\Encoding;
 
 final class DefaultGCodeDecoder implements GCodeDecoder
 {

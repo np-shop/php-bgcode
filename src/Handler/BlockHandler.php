@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace NickNickDevelopment\BgCode\Handler;
+namespace NPShop\BgCode\Handler;
 
-use NickNickDevelopment\BgCode\Block\Block;
-use NickNickDevelopment\BgCode\Header\BlockHeader;
+use NPShop\BgCode\Block\Block;
+use NPShop\BgCode\Header\BlockHeader;
 
 interface BlockHandler
 {

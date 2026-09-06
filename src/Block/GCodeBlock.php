@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace NickNickDevelopment\BgCode\Block;
+namespace NPShop\BgCode\Block;
 
-use NickNickDevelopment\BgCode\Encoding\GCodeEncodingType;
-use NickNickDevelopment\BgCode\Encoding\GCodeDecoder;
-use NickNickDevelopment\BgCode\Support\UInt;
+use NPShop\BgCode\Encoding\GCodeEncodingType;
+use NPShop\BgCode\Encoding\GCodeDecoder;
+use NPShop\BgCode\Support\UInt;
 
 final class GCodeBlock extends Block
 {

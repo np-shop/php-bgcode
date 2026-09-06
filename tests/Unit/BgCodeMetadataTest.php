@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace NickNickDevelopment\BgCode\Tests\Unit;
+namespace NPShop\BgCode\Tests\Unit;
 
-use NickNickDevelopment\BgCode\BgCode;
-use NickNickDevelopment\BgCode\Block\FileMetadataBlock;
-use NickNickDevelopment\BgCode\Thumbnail\ThumbnailFormat;
+use NPShop\BgCode\BgCode;
+use NPShop\BgCode\Block\FileMetadataBlock;
+use NPShop\BgCode\Thumbnail\ThumbnailFormat;
 use PHPUnit\Framework\TestCase;
 
 final class BgCodeMetadataTest extends TestCase

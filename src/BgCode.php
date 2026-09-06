@@ -2,24 +2,24 @@
 
 declare(strict_types=1);
 
-namespace NickNickDevelopment\BgCode;
+namespace NPShop\BgCode;
 
-use NickNickDevelopment\BgCode\Block\Block;
-use NickNickDevelopment\BgCode\Block\FileMetadataBlock;
-use NickNickDevelopment\BgCode\Block\GCodeBlock;
-use NickNickDevelopment\BgCode\Block\MetadataBlock;
-use NickNickDevelopment\BgCode\Block\PrintMetadataBlock;
-use NickNickDevelopment\BgCode\Block\PrinterMetadataBlock;
-use NickNickDevelopment\BgCode\Block\SlicerMetadataBlock;
-use NickNickDevelopment\BgCode\Block\ThumbnailBlock;
-use NickNickDevelopment\BgCode\Compression\DecompressorRegistry;
-use NickNickDevelopment\BgCode\Encoding\DefaultGCodeDecoder;
-use NickNickDevelopment\BgCode\Encoding\MeatPackDecoder;
-use NickNickDevelopment\BgCode\Exception\InvalidFormatException;
-use NickNickDevelopment\BgCode\Header\FileHeader;
-use NickNickDevelopment\BgCode\Reader\BinaryReader;
-use NickNickDevelopment\BgCode\Reader\BlockReader;
-use NickNickDevelopment\BgCode\Thumbnail\ThumbnailFormat;
+use NPShop\BgCode\Block\Block;
+use NPShop\BgCode\Block\FileMetadataBlock;
+use NPShop\BgCode\Block\GCodeBlock;
+use NPShop\BgCode\Block\MetadataBlock;
+use NPShop\BgCode\Block\PrintMetadataBlock;
+use NPShop\BgCode\Block\PrinterMetadataBlock;
+use NPShop\BgCode\Block\SlicerMetadataBlock;
+use NPShop\BgCode\Block\ThumbnailBlock;
+use NPShop\BgCode\Compression\DecompressorRegistry;
+use NPShop\BgCode\Encoding\DefaultGCodeDecoder;
+use NPShop\BgCode\Encoding\MeatPackDecoder;
+use NPShop\BgCode\Exception\InvalidFormatException;
+use NPShop\BgCode\Header\FileHeader;
+use NPShop\BgCode\Reader\BinaryReader;
+use NPShop\BgCode\Reader\BlockReader;
+use NPShop\BgCode\Thumbnail\ThumbnailFormat;
 
 final class BgCode
 {

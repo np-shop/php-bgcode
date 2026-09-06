@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace NickNickDevelopment\BgCode\Tests\Unit;
+namespace NPShop\BgCode\Tests\Unit;
 
-use NickNickDevelopment\BgCode\Block\BlockType;
-use NickNickDevelopment\BgCode\Compression\CompressionType;
+use NPShop\BgCode\Block\BlockType;
+use NPShop\BgCode\Compression\CompressionType;
 use PHPUnit\Framework\TestCase;
 
 final class EnumsTest extends TestCase

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace NickNickDevelopment\BgCode\Thumbnail;
+namespace NPShop\BgCode\Thumbnail;
 
 enum ThumbnailFormat: int
 {

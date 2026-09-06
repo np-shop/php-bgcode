@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace NickNickDevelopment\BgCode\Header;
+namespace NPShop\BgCode\Header;
 
-use NickNickDevelopment\BgCode\Block\BlockType;
-use NickNickDevelopment\BgCode\Compression\CompressionType;
+use NPShop\BgCode\Block\BlockType;
+use NPShop\BgCode\Compression\CompressionType;
 
 final readonly class BlockHeader
 {

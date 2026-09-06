@@ -2,18 +2,18 @@
 
 Pure PHP reader for Prusa BGCode files.
 
-This library reads BGCode streams into typed blocks and exposes the main file surfaces through `BgCode`.
+This library reads Binary Gcode streams into typed blocks and exposes the main file surfaces through `BgCode`.
 
 ## Installation
 
 ```bash
-composer require nicknick-development/php-bgcode
+composer require np-shop/php-bgcode
 ```
 
 ## Usage
 
 ```php
-use NickNickDevelopment\BgCode\BgCode;
+use NPShop\BgCode\BgCode;
 
 $bgcode = BgCode::open('print.bgcode');
 ```

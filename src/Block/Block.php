@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace NickNickDevelopment\BgCode\Block;
+namespace NPShop\BgCode\Block;
 
-use NickNickDevelopment\BgCode\Header\BlockHeader;
+use NPShop\BgCode\Header\BlockHeader;
 
 abstract class Block
 {

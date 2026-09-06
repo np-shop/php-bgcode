@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace NickNickDevelopment\BgCode\Metadata;
+namespace NPShop\BgCode\Metadata;
 
 enum MetadataEncodingType: int
 {
