@@ -1,6 +1,6 @@
 # php-bgcode
 
-Pure PHP reader for Prusa BGCode files.
+PHP reader for Prusa Binary Gcode files.
 
 This library reads Binary Gcode streams into typed blocks and exposes the main file surfaces through `BgCode`.
 
